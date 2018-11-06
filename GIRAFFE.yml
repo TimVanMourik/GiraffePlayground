@@ -1,0 +1,5 @@
+# list of tools
+tools:
+  porcupine:
+    file:
+      - GIRAFFE/porcupine_pipeline.pork
