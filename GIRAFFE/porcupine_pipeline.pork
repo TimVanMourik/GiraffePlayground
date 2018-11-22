@@ -49,8 +49,8 @@
       "to": "41cce40"
     },
     {
-      "from": "4111420",
-      "to": "1a5a9898-37cd-40ea-bc3e-f457cff5e745"
+      "from": "21915f0",
+      "to": "c8eac22c-81c8-461e-8bc8-9d0235bc003c"
     }
   ],
   "nodes": [
@@ -1058,8 +1058,8 @@
         }
       ],
       "position": [
-        -1094.006878366162,
-        -464.7734156996364
+        -1109.0099301239745,
+        -459.77237810198017
       ],
       "title": {
         "code": [
@@ -2372,26 +2372,31 @@
       }
     },
     {
+      "category": [
+        "Nipype",
+        "utility",
+        "base"
+      ],
       "ports": [
         {
           "base": "volume1",
           "editable": true,
-          "id": "bfa59295-2ab7-4d87-9336-3a71fa92819b",
+          "id": "f7808a54-c53a-4c61-8bf3-43cbab23e4fa",
           "input": true,
-          "inputPort": "1a5a9898-37cd-40ea-bc3e-f457cff5e745",
+          "inputPort": "c8eac22c-81c8-461e-8bc8-9d0235bc003c",
           "iterator": false,
           "name": "volume1",
           "output": false,
           "outputPort": false,
-          "value": "test",
+          "value": "",
           "visible": true
         },
         {
           "base": "volume2",
           "editable": true,
-          "id": "85b3e636-27a7-49a8-bd46-9a0bfb05591b",
+          "id": "344d3807-d7e5-43d9-a664-ecfc6a8e49ec",
           "input": true,
-          "inputPort": "071433d2-5031-463d-8c23-c854da63a901",
+          "inputPort": "536e159b-5f1d-45c2-865a-7114fc7b6baa",
           "iterator": false,
           "name": "volume2",
           "output": false,
@@ -2402,9 +2407,9 @@
         {
           "base": "ignore_exception",
           "editable": true,
-          "id": "3e7e7e6e-c5d3-4a95-9881-fe824d8ceb38",
+          "id": "3b88f219-8e40-4ed4-aa27-5f171b81fa61",
           "input": true,
-          "inputPort": "4f1432de-453c-4e2b-8acb-0ff64a18698f",
+          "inputPort": "d3e5a009-92b8-469d-8659-ae175c06e09d",
           "iterator": false,
           "name": "ignore_exception",
           "output": false,
@@ -2414,8 +2419,8 @@
         }
       ],
       "position": [
-        -833.185975473894,
-        -48.53839179341149
+        -833.1860230208379,
+        23.97644806902903
       ],
       "title": {
         "code": [
