@@ -69,5 +69,7 @@ ENV FSLDIR=/opt/fsl \
 #--------------------------------
 # Add custom analysis file as CMD
 #--------------------------------
-ADD /path/to/pipeline/script.py /code/workflow.py
+RUN mkdir /code
+WORKDIR /code
+ADD ./workflow.py /code/workflow.py
 CMD ["python", "/code/workflow.py"]
