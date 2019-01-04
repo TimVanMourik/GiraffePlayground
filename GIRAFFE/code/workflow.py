@@ -53,18 +53,18 @@ my_io.DataSink = pe.Node(interface = io.DataSink(), name='my_io.DataSink', iterf
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
-analysisflow.connect(my_undefined, "undefined", my_undefined, "undefined")
+analysisflow.connect(my_io.S3DataGrabber, "outfiles", my_fsl.SliceTimer, "in_file")
+analysisflow.connect(my_fsl.SliceTimer, "slice_time_corrected_file", my_fsl.MCFLIRT, "in_file")
+analysisflow.connect(my_fsl.MCFLIRT, "out_file", my_confounds.TSNR, "in_file")
+analysisflow.connect(my_confounds.TSNR, "stddev_file", my_fsl.ImageStats, "in_file")
+analysisflow.connect(my_fsl.ImageStats, "out_stat", my_fsl.Threshold, "thresh")
+analysisflow.connect(my_fsl.MCFLIRT, "out_file", my_confounds.ACompCor, "realigned_file")
+analysisflow.connect(my_fsl.Threshold, "out_file", my_confounds.ACompCor, "mask_files")
+analysisflow.connect(my_confounds.ACompCor, "components_file", my_fsl.FilterRegressor, "design_file")
+analysisflow.connect(my_confounds.TSNR, "detrended_file", my_fsl.FilterRegressor, "in_file")
+analysisflow.connect(my_fsl.FilterRegressor, "out_file", my_fsl.TemporalFilter, "in_file")
+analysisflow.connect(my_fsl.TemporalFilter, "out_file", my_io.DataSink, "filtered_file")
+analysisflow.connect(my_confounds.TSNR, "stddev_file", my_fsl.Threshold, "in_file")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here
