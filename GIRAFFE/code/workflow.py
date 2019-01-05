@@ -53,18 +53,18 @@ my_io_DataSink = pe.Node(interface = io.DataSink(), name='my_io_DataSink', iterf
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
-analysisflow.connect(my_io_S3DataGrabber, "outfiles", my_fsl_SliceTimer, "in_file")
-analysisflow.connect(my_fsl_SliceTimer, "slice_time_corrected_file", my_fsl_MCFLIRT, "in_file")
-analysisflow.connect(my_fsl_MCFLIRT, "out_file", my_confounds_TSNR, "in_file")
-analysisflow.connect(my_confounds_TSNR, "stddev_file", my_fsl_ImageStats, "in_file")
-analysisflow.connect(my_fsl_ImageStats, "out_stat", my_fsl_Threshold, "thresh")
-analysisflow.connect(my_fsl_MCFLIRT, "out_file", my_confounds_ACompCor, "realigned_file")
-analysisflow.connect(my_fsl_Threshold, "out_file", my_confounds_ACompCor, "mask_files")
-analysisflow.connect(my_confounds_ACompCor, "components_file", my_fsl_FilterRegressor, "design_file")
-analysisflow.connect(my_confounds_TSNR, "detrended_file", my_fsl_FilterRegressor, "in_file")
-analysisflow.connect(my_fsl_FilterRegressor, "out_file", my_fsl_TemporalFilter, "in_file")
-analysisflow.connect(my_fsl_TemporalFilter, "out_file", my_io_DataSink, "filtered_file")
-analysisflow.connect(my_confounds_TSNR, "stddev_file", my_fsl_Threshold, "in_file")
+analysisflow.connect(my_undefined, "outfiles", my_undefined, "in_file")
+analysisflow.connect(my_undefined, "slice_time_corrected_file", my_undefined, "in_file")
+analysisflow.connect(my_undefined, "out_file", my_undefined, "in_file")
+analysisflow.connect(my_undefined, "stddev_file", my_undefined, "in_file")
+analysisflow.connect(my_undefined, "out_stat", my_undefined, "thresh")
+analysisflow.connect(my_undefined, "out_file", my_undefined, "realigned_file")
+analysisflow.connect(my_undefined, "out_file", my_undefined, "mask_files")
+analysisflow.connect(my_undefined, "components_file", my_undefined, "design_file")
+analysisflow.connect(my_undefined, "detrended_file", my_undefined, "in_file")
+analysisflow.connect(my_undefined, "out_file", my_undefined, "in_file")
+analysisflow.connect(my_undefined, "out_file", my_undefined, "filtered_file")
+analysisflow.connect(my_undefined, "stddev_file", my_undefined, "in_file")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here
