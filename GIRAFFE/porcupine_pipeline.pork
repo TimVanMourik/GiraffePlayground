@@ -2168,8 +2168,8 @@
           "name": "base_directory",
           "output": false,
           "outputPort": false,
-          "value": "",
-          "visible": false,
+          "value": "'./output'",
+          "visible": true,
           "iterator": false
         },
         {
@@ -2343,8 +2343,8 @@
         }
       ],
       "position": [
-        334.0831352501691,
-        33.9054144980264
+        355.63776171501286,
+        88.98942939060453
       ],
       "title": {
         "code": [
