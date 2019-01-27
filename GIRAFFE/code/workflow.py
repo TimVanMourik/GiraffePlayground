@@ -10,6 +10,7 @@ import nipype.interfaces.fsl as fsl
 import nipype.algorithms.confounds as confounds
 import nipype.interfaces.utility as utility
 import nipype.interfaces.spm as spm
+import nipype.algorithms.misc as misc
 
 #Generic datagrabber module that wraps around glob in an
 io_S3DataGrabber = pe.Node(io.S3DataGrabber(outfields=["outfiles"]), name = 'io_S3DataGrabber')
@@ -54,6 +55,9 @@ utility_Rename.inputs.format_string = "/output/filtered_spm.nii.gz"
 #Use spm_realign for estimating within modality rigid body alignment
 spm_Realign = pe.Node(interface = spm.Realign(), name='spm_Realign', iterfield = [''])
 
+#Gunzip wrapper
+misc_Gunzip = pe.Node(interface = misc.Gunzip(), name='misc_Gunzip', iterfield = [''])
+
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
 analysisflow.connect(io_S3DataGrabber, "outfiles", fsl_SliceTimer, "in_file")
@@ -65,9 +69,10 @@ analysisflow.connect(confounds_TSNR, "detrended_file", fsl_FilterRegressor, "in_
 analysisflow.connect(fsl_FilterRegressor, "out_file", fsl_TemporalFilter, "in_file")
 analysisflow.connect(confounds_TSNR, "stddev_file", fsl_Threshold, "in_file")
 analysisflow.connect(fsl_TemporalFilter, "out_file", utility_Rename, "in_file")
-analysisflow.connect(fsl_SliceTimer, "slice_time_corrected_file", spm_Realign, "in_files")
 analysisflow.connect(spm_Realign, "realigned_files", confounds_TSNR, "in_file")
 analysisflow.connect(spm_Realign, "realigned_files", confounds_ACompCor, "realigned_file")
+analysisflow.connect(fsl_SliceTimer, "slice_time_corrected_file", misc_Gunzip, "in_file")
+analysisflow.connect(misc_Gunzip, "out_file", spm_Realign, "in_files")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here

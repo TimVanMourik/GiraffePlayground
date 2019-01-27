@@ -37,16 +37,20 @@
       "to": "eea22b1d-b0c0-4b9c-9cad-fe18670d07dd"
     },
     {
-      "from": "76ba750",
-      "to": "ee68f7c4-703d-4845-956d-2f61e5a1d880"
-    },
-    {
       "from": "9571cb74-9022-4929-8cda-73268fc0f3e8",
       "to": "24ac070"
     },
     {
       "from": "9571cb74-9022-4929-8cda-73268fc0f3e8",
       "to": "7395ca0"
+    },
+    {
+      "from": "76ba750",
+      "to": "e2383e06-e132-48d1-995f-5a92b7b5f00a"
+    },
+    {
+      "from": "3dbb59e7-4e18-49d3-bd69-cdd13fc1f877",
+      "to": "ee68f7c4-703d-4845-956d-2f61e5a1d880"
     }
   ],
   "nodes": [
@@ -201,8 +205,8 @@
         }
       ],
       "position": [
-        -1939.2838760422926,
-        -313.79805192529625
+        -2162.396424870418,
+        -300.334367843265
       ],
       "title": {
         "code": [
@@ -430,8 +434,8 @@
         }
       ],
       "position": [
-        -1712.0443746372794,
-        -303.7137141105314
+        -1910.1527730747794,
+        -290.25003002850013
       ],
       "title": {
         "code": [
@@ -2155,6 +2159,79 @@
         "name": "spm_Realign",
         "class": "spm.Realign",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.spm/preprocess.html#realign"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "algorithms",
+        "misc"
+      ],
+      "ports": [
+        {
+          "base": "in_file",
+          "editable": true,
+          "id": "c29f6a83-6f50-4b26-8b70-1f472aa60ff7",
+          "input": true,
+          "inputPort": "e2383e06-e132-48d1-995f-5a92b7b5f00a",
+          "name": "in_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "ignore_exception",
+          "editable": true,
+          "id": "fce38696-d9fc-4060-8492-36d3ac37ebf3",
+          "input": true,
+          "inputPort": "55caaa7f-33ec-46a6-a574-584b73f1b1c0",
+          "name": "ignore_exception",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": false,
+          "id": "1610c7ce-9de0-473a-a4f5-ec607f1a8d3a",
+          "input": false,
+          "inputPort": false,
+          "name": "out_file",
+          "output": true,
+          "outputPort": "3dbb59e7-4e18-49d3-bd69-cdd13fc1f877",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -1604.902791886288,
+        -301.3842182314846
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Gunzip wrapper",
+            "argument": {
+              "name": "misc.Gunzip()",
+              "import": "import nipype.algorithms.misc as misc"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, algorithms, misc"
+            }
+          }
+        ],
+        "name": "misc_Gunzip",
+        "class": "misc.Gunzip",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.misc.html#gunzip"
       }
     }
   ],
