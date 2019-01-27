@@ -41,12 +41,12 @@
       "to": "596e0a0"
     },
     {
-      "from": "89647d0",
-      "to": "9969cc0"
-    },
-    {
       "from": "4111420",
       "to": "41cce40"
+    },
+    {
+      "from": "89647d0",
+      "to": "eea22b1d-b0c0-4b9c-9cad-fe18670d07dd"
     }
   ],
   "nodes": [
@@ -201,8 +201,8 @@
         }
       ],
       "position": [
-        -1810.83990631573,
-        -369.3011342006869
+        -1829.17877350323,
+        -318.1158925014681
       ],
       "title": {
         "code": [
@@ -221,7 +221,8 @@
             "language": "Docker"
           }
         ],
-        "name": "io.S3DataGrabber",
+        "name": "io_S3DataGrabber",
+        "class": "io.S3DataGrabber",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
       }
     },
@@ -429,8 +430,8 @@
         }
       ],
       "position": [
-        -1485.0829488560294,
-        -348.2027735587736
+        -1584.6679097935294,
+        -305.8726343986173
       ],
       "title": {
         "code": [
@@ -449,7 +450,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.SliceTimer",
+        "name": "fsl_SliceTimer",
+        "class": "fsl.SliceTimer",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#slicetimer"
       }
     },
@@ -878,8 +880,8 @@
         }
       ],
       "position": [
-        -1276.1824681666421,
-        -300.11280054966727
+        -1288.8178441432046,
+        -340.54590601841727
       ],
       "title": {
         "code": [
@@ -898,7 +900,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.MCFLIRT",
+        "name": "fsl_MCFLIRT",
+        "class": "fsl.MCFLIRT",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#mcflirt"
       }
     },
@@ -1054,8 +1057,8 @@
         }
       ],
       "position": [
-        -1101.7230648895995,
-        -481.8429957777614
+        -1119.4161190888183,
+        -493.21387590471454
       ],
       "title": {
         "code": [
@@ -1074,7 +1077,8 @@
             "language": "Docker"
           }
         ],
-        "name": "confounds.TSNR",
+        "name": "confounds_TSNR",
+        "class": "confounds.TSNR",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#tsnr"
       }
     },
@@ -1217,8 +1221,8 @@
         }
       ],
       "position": [
-        -900.9467907431813,
-        -567.3255167273792
+        -898.4197521689625,
+        -552.1631021765979
       ],
       "title": {
         "code": [
@@ -1237,7 +1241,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.ImageStats",
+        "name": "fsl_ImageStats",
+        "class": "fsl.ImageStats",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#imagestats"
       }
     },
@@ -1445,8 +1450,8 @@
         }
       ],
       "position": [
-        -704.4997461450441,
-        -491.1176114953433
+        -694.3933008325441,
+        -478.4822660363589
       ],
       "title": {
         "code": [
@@ -1465,7 +1470,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.Threshold",
+        "name": "fsl_Threshold",
+        "class": "fsl.Threshold",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#threshold"
       }
     },
@@ -1699,8 +1705,8 @@
         }
       ],
       "position": [
-        -443.6993593509652,
-        -350.5563640673656
+        -494.24434226112146,
+        -345.50222588377187
       ],
       "title": {
         "code": [
@@ -1719,7 +1725,8 @@
             "language": "Docker"
           }
         ],
-        "name": "confounds.ACompCor",
+        "name": "confounds_ACompCor",
+        "class": "confounds.ACompCor",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#acompcor"
       }
     },
@@ -1914,8 +1921,8 @@
         }
       ],
       "position": [
-        -199.83406260845013,
-        -176.12493653626098
+        -223.33335307475872,
+        -193.1830954107727
       ],
       "title": {
         "code": [
@@ -1934,7 +1941,8 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.FilterRegressor",
+        "name": "fsl_FilterRegressor",
+        "class": "fsl.FilterRegressor",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#filterregressor"
       }
     },
@@ -2116,8 +2124,8 @@
         }
       ],
       "position": [
-        66.52629910057797,
-        -53.6317528442454
+        58.620911222160004,
+        -83.07837760010477
       ],
       "title": {
         "code": [
@@ -2136,23 +2144,25 @@
             "language": "Docker"
           }
         ],
-        "name": "fsl.TemporalFilter",
+        "name": "fsl_TemporalFilter",
+        "class": "fsl.TemporalFilter",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter"
       }
     },
     {
       "category": [
         "Nipype",
-        "io"
+        "utility",
+        "base"
       ],
       "ports": [
         {
-          "base": "filtered_file",
+          "base": "in_file",
           "editable": true,
-          "id": "7781eb73-b857-480d-8164-657b53c7384c",
+          "id": "11fa3609-2827-4cc2-bc17-1f99a99be50b",
           "input": true,
-          "inputPort": "9969cc0",
-          "name": "filtered_file",
+          "inputPort": "eea22b1d-b0c0-4b9c-9cad-fe18670d07dd",
+          "name": "in_file",
           "output": false,
           "outputPort": false,
           "value": "",
@@ -2160,25 +2170,25 @@
           "iterator": false
         },
         {
-          "base": "base_directory",
+          "base": "format_string",
           "editable": true,
-          "id": "839dae0d-c04b-4ee8-b518-6c476b64bd76",
+          "id": "3702c589-3127-497e-9ae2-ae19099f74ef",
           "input": true,
-          "inputPort": "996bd60",
-          "name": "base_directory",
+          "inputPort": "862df05d-d1ca-444c-8aa5-272ce85f9b71",
+          "name": "format_string",
           "output": false,
           "outputPort": false,
-          "value": "'./output'",
+          "value": "\"/output/filtered.nii.gz\"",
           "visible": true,
           "iterator": false
         },
         {
-          "base": "container",
+          "base": "keep_ext",
           "editable": true,
-          "id": "064a2ac1-692d-4afa-9b13-c400b28bf4e3",
+          "id": "5d85ce8d-0e4d-4b07-9af7-040151d4d3da",
           "input": true,
-          "inputPort": "a3624a0",
-          "name": "container",
+          "inputPort": "5ad0b9df-cc67-4161-9e5b-7b2ac7dc4dac",
+          "name": "keep_ext",
           "output": false,
           "outputPort": false,
           "value": "",
@@ -2186,12 +2196,12 @@
           "iterator": false
         },
         {
-          "base": "parameterization",
+          "base": "parse_string",
           "editable": true,
-          "id": "00a6db71-cbfa-4818-9186-65d3cf7c2725",
+          "id": "62c8dab0-e819-46d8-90d5-77bf265ce0ec",
           "input": true,
-          "inputPort": "a3663b0",
-          "name": "parameterization",
+          "inputPort": "078cf01f-1c55-4460-b8aa-5bc3b73db881",
+          "name": "parse_string",
           "output": false,
           "outputPort": false,
           "value": "",
@@ -2199,129 +2209,12 @@
           "iterator": false
         },
         {
-          "base": "strip_dir",
+          "base": "use_fullpath",
           "editable": true,
-          "id": "0f7bb87a-92a2-4c77-8340-5bcd76c9f551",
+          "id": "c805dc10-7364-4415-bbe9-861a4ae60758",
           "input": true,
-          "inputPort": "a36ad10",
-          "name": "strip_dir",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "substitutions",
-          "editable": true,
-          "id": "ea3ff337-6268-4202-841b-e9be36b21c5a",
-          "input": true,
-          "inputPort": "a36f1b0",
-          "name": "substitutions",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "regexp_substitutions",
-          "editable": true,
-          "id": "8b404bdd-902a-4355-a20e-945c2aa24d4e",
-          "input": true,
-          "inputPort": "a5446d0",
-          "name": "regexp_substitutions",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "_outputs",
-          "editable": true,
-          "id": "1f4c4105-c4ba-4ebf-9754-df488ab7436c",
-          "input": true,
-          "inputPort": "a5490f0",
-          "name": "_outputs",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "remove_dest_dir",
-          "editable": true,
-          "id": "e211b9bd-33e9-4f37-8c10-47d4f8b0fb9c",
-          "input": true,
-          "inputPort": "a54cf90",
-          "name": "remove_dest_dir",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "creds_path",
-          "editable": true,
-          "id": "757c8f86-651d-4cf1-9b16-9dbbbf178c8f",
-          "input": true,
-          "inputPort": "a5518e0",
-          "name": "creds_path",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "encrypt_bucket_keys",
-          "editable": true,
-          "id": "bd2d1218-4bcf-4ee6-9832-29d4a91aba68",
-          "input": true,
-          "inputPort": "a5557b0",
-          "name": "encrypt_bucket_keys",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "bucket",
-          "editable": true,
-          "id": "83ef0662-7733-4b37-bf07-18e869289007",
-          "input": true,
-          "inputPort": "a559c80",
-          "name": "bucket",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "local_copy",
-          "editable": true,
-          "id": "2fecb98d-a7ea-4a72-afb1-bbf74e622e46",
-          "input": true,
-          "inputPort": "a55e440",
-          "name": "local_copy",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "ignore_exception",
-          "editable": true,
-          "id": "e594ee37-7bd2-4ef5-8b42-2a36d250620c",
-          "input": true,
-          "inputPort": "a562310",
-          "name": "ignore_exception",
+          "inputPort": "5a14fe4e-36fa-4d3d-a40f-409c836b2ccb",
+          "name": "use_fullpath",
           "output": false,
           "outputPort": false,
           "value": "",
@@ -2331,40 +2224,41 @@
         {
           "base": "out_file",
           "editable": false,
-          "id": "78e308ac-ab49-4bf8-a936-a596e72e516a",
+          "id": "9fb33d45-4916-4c8a-97d6-fc30a71a491a",
           "input": false,
           "inputPort": false,
           "name": "out_file",
           "output": true,
-          "outputPort": "a566d00",
+          "outputPort": "b0db489f-2037-47f1-8696-dfcad7b48f7c",
           "value": "",
-          "visible": false,
+          "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        334.0831352501691,
-        33.9054144980264
+        323.2093328899807,
+        -25.25749080146167
       ],
       "title": {
         "code": [
           {
+            "language": "Nipype",
+            "comment": "Change the name of a file based on a mapped format string.",
             "argument": {
-              "import": "import nipype.interfaces.io as io",
-              "name": "io.DataSink()"
-            },
-            "comment": "Generic datasink module to store structured outputs",
-            "language": "Nipype"
+              "name": "utility.Rename()",
+              "import": "import nipype.interfaces.utility as utility"
+            }
           },
           {
+            "language": "Docker",
             "argument": {
-              "name": "Nipype, io"
-            },
-            "language": "Docker"
+              "name": "Nipype, utility"
+            }
           }
         ],
-        "name": "io.DataSink",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#datasink"
+        "name": "utility_Rename",
+        "class": "utility.Rename",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename"
       }
     }
   ],
