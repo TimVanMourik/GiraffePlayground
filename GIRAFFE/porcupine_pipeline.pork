@@ -55,8 +55,10 @@
   ],
   "nodes": [
     {
+      "toolbox": "Nipype",
+      "name": "io_S3DataGrabber",
+      "class": "io.S3DataGrabber",
       "category": [
-        "Nipype",
         "io"
       ],
       "ports": [
@@ -208,31 +210,29 @@
         -2177.880311589168,
         -331.30202683984703
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.io as io",
-              "name": "io.S3DataGrabber()"
-            },
-            "comment": "Generic datagrabber module that wraps around glob in an",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.io as io",
+            "name": "io.S3DataGrabber()"
           },
-          {
-            "argument": {
-              "name": "Nipype, io"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "io_S3DataGrabber",
-        "class": "io.S3DataGrabber",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
-      }
+          "comment": "Generic datagrabber module that wraps around glob in an",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, io"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
     },
     {
+      "toolbox": "Nipype",
+      "name": "fsl_SliceTimer",
+      "class": "fsl.SliceTimer",
       "category": [
-        "Nipype",
         "fsl",
         "preprocess"
       ],
@@ -437,31 +437,29 @@
         -1910.1527730747794,
         -290.25003002850013
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.SliceTimer()"
-            },
-            "comment": "Wraps command **slicetimer**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.SliceTimer()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "fsl_SliceTimer",
-        "class": "fsl.SliceTimer",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#slicetimer"
-      }
+          "comment": "Wraps command **slicetimer**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#slicetimer"
     },
     {
+      "toolbox": "Nipype",
+      "name": "confounds_TSNR",
+      "class": "confounds.TSNR",
       "category": [
-        "Nipype",
         "algorithms",
         "confounds"
       ],
@@ -614,31 +612,29 @@
         -1119.4161190888183,
         -493.21387590471454
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.algorithms.confounds as confounds",
-              "name": "confounds.TSNR()"
-            },
-            "comment": "Computes the time-course SNR for a time series",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.algorithms.confounds as confounds",
+            "name": "confounds.TSNR()"
           },
-          {
-            "argument": {
-              "name": "Nipype, algorithms, confounds"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "confounds_TSNR",
-        "class": "confounds.TSNR",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#tsnr"
-      }
+          "comment": "Computes the time-course SNR for a time series",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, algorithms, confounds"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#tsnr"
     },
     {
+      "toolbox": "Nipype",
+      "name": "fsl_ImageStats",
+      "class": "fsl.ImageStats",
       "category": [
-        "Nipype",
         "fsl",
         "utils"
       ],
@@ -778,31 +774,29 @@
         -898.4197521689625,
         -552.1631021765979
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.ImageStats()"
-            },
-            "comment": "Wraps command **fslstats**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.ImageStats()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "fsl_ImageStats",
-        "class": "fsl.ImageStats",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#imagestats"
-      }
+          "comment": "Wraps command **fslstats**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#imagestats"
     },
     {
+      "toolbox": "Nipype",
+      "name": "fsl_Threshold",
+      "class": "fsl.Threshold",
       "category": [
-        "Nipype",
         "fsl",
         "maths"
       ],
@@ -1007,31 +1001,29 @@
         -694.3933008325441,
         -478.4822660363589
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.Threshold()"
-            },
-            "comment": "Wraps command **fslmaths**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.Threshold()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "fsl_Threshold",
-        "class": "fsl.Threshold",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#threshold"
-      }
+          "comment": "Wraps command **fslmaths**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#threshold"
     },
     {
+      "toolbox": "Nipype",
+      "name": "confounds_ACompCor",
+      "class": "confounds.ACompCor",
       "category": [
-        "Nipype",
         "algorithms",
         "confounds"
       ],
@@ -1262,31 +1254,29 @@
         -494.24434226112146,
         -345.50222588377187
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.algorithms.confounds as confounds",
-              "name": "confounds.ACompCor()"
-            },
-            "comment": "Anatomical compcor: for inputs and outputs, see CompCor.",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.algorithms.confounds as confounds",
+            "name": "confounds.ACompCor()"
           },
-          {
-            "argument": {
-              "name": "Nipype, algorithms, confounds"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "confounds_ACompCor",
-        "class": "confounds.ACompCor",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#acompcor"
-      }
+          "comment": "Anatomical compcor: for inputs and outputs, see CompCor.",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, algorithms, confounds"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#acompcor"
     },
     {
+      "toolbox": "Nipype",
+      "name": "fsl_FilterRegressor",
+      "class": "fsl.FilterRegressor",
       "category": [
-        "Nipype",
         "fsl",
         "utils"
       ],
@@ -1478,31 +1468,29 @@
         -223.33335307475872,
         -193.1830954107727
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.FilterRegressor()"
-            },
-            "comment": "Wraps command **fsl_regfilt**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.FilterRegressor()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "fsl_FilterRegressor",
-        "class": "fsl.FilterRegressor",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#filterregressor"
-      }
+          "comment": "Wraps command **fsl_regfilt**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#filterregressor"
     },
     {
+      "toolbox": "Nipype",
+      "name": "fsl_TemporalFilter",
+      "class": "fsl.TemporalFilter",
       "category": [
-        "Nipype",
         "fsl",
         "maths"
       ],
@@ -1681,31 +1669,29 @@
         58.620911222160004,
         -83.07837760010477
       ],
-      "title": {
-        "code": [
-          {
-            "argument": {
-              "import": "import nipype.interfaces.fsl as fsl",
-              "name": "fsl.TemporalFilter()"
-            },
-            "comment": "Wraps command **fslmaths**",
-            "language": "Nipype"
+      "code": [
+        {
+          "argument": {
+            "import": "import nipype.interfaces.fsl as fsl",
+            "name": "fsl.TemporalFilter()"
           },
-          {
-            "argument": {
-              "name": "Nipype, fsl"
-            },
-            "language": "Docker"
-          }
-        ],
-        "name": "fsl_TemporalFilter",
-        "class": "fsl.TemporalFilter",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter"
-      }
+          "comment": "Wraps command **fslmaths**",
+          "language": "Nipype"
+        },
+        {
+          "argument": {
+            "name": "Nipype, fsl"
+          },
+          "language": "Docker"
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter"
     },
     {
+      "toolbox": "Nipype",
+      "name": "utility_Rename",
+      "class": "utility.Rename",
       "category": [
-        "Nipype",
         "utility",
         "base"
       ],
@@ -1793,31 +1779,29 @@
         323.2093328899807,
         -27.406458544381593
       ],
-      "title": {
-        "code": [
-          {
-            "language": "Nipype",
-            "comment": "Change the name of a file based on a mapped format string.",
-            "argument": {
-              "name": "utility.Rename()",
-              "import": "import nipype.interfaces.utility as utility"
-            }
-          },
-          {
-            "language": "Docker",
-            "argument": {
-              "name": "Nipype, utility"
-            }
+      "code": [
+        {
+          "language": "Nipype",
+          "comment": "Change the name of a file based on a mapped format string.",
+          "argument": {
+            "name": "utility.Rename()",
+            "import": "import nipype.interfaces.utility as utility"
           }
-        ],
-        "name": "utility_Rename",
-        "class": "utility.Rename",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename"
-      }
+        },
+        {
+          "language": "Docker",
+          "argument": {
+            "name": "Nipype, utility"
+          }
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename"
     },
     {
+      "toolbox": "Nipype",
+      "name": "spm_Realign",
+      "class": "spm.Realign",
       "category": [
-        "Nipype",
         "spm",
         "preprocess"
       ],
@@ -2139,31 +2123,29 @@
         -1406.445394280783,
         -346.7319445539039
       ],
-      "title": {
-        "code": [
-          {
-            "language": "Nipype",
-            "comment": "Use spm_realign for estimating within modality rigid body alignment",
-            "argument": {
-              "name": "spm.Realign()",
-              "import": "import nipype.interfaces.spm as spm"
-            }
-          },
-          {
-            "language": "Docker",
-            "argument": {
-              "name": "Nipype, spm"
-            }
+      "code": [
+        {
+          "language": "Nipype",
+          "comment": "Use spm_realign for estimating within modality rigid body alignment",
+          "argument": {
+            "name": "spm.Realign()",
+            "import": "import nipype.interfaces.spm as spm"
           }
-        ],
-        "name": "spm_Realign",
-        "class": "spm.Realign",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.spm/preprocess.html#realign"
-      }
+        },
+        {
+          "language": "Docker",
+          "argument": {
+            "name": "Nipype, spm"
+          }
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.spm/preprocess.html#realign"
     },
     {
+      "toolbox": "Nipype",
+      "name": "misc_Gunzip",
+      "class": "misc.Gunzip",
       "category": [
-        "Nipype",
         "algorithms",
         "misc"
       ],
@@ -2212,27 +2194,23 @@
         -1604.902791886288,
         -301.3842182314846
       ],
-      "title": {
-        "code": [
-          {
-            "language": "Nipype",
-            "comment": "Gunzip wrapper",
-            "argument": {
-              "name": "misc.Gunzip()",
-              "import": "import nipype.algorithms.misc as misc"
-            }
-          },
-          {
-            "language": "Docker",
-            "argument": {
-              "name": "Nipype, algorithms, misc"
-            }
+      "code": [
+        {
+          "language": "Nipype",
+          "comment": "Gunzip wrapper",
+          "argument": {
+            "name": "misc.Gunzip()",
+            "import": "import nipype.algorithms.misc as misc"
           }
-        ],
-        "name": "misc_Gunzip",
-        "class": "misc.Gunzip",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.misc.html#gunzip"
-      }
+        },
+        {
+          "language": "Docker",
+          "argument": {
+            "name": "Nipype, algorithms, misc"
+          }
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.misc.html#gunzip"
     }
   ],
   "version": "v1"

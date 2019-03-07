@@ -22,41 +22,41 @@ io_S3DataGrabber.inputs.bucket_path = 'ds000101/ds000101_R2.0.0/uncompressed/'
 io_S3DataGrabber.inputs.local_directory = '/tmp'
 
 #Wraps command **slicetimer**
-fsl_SliceTimer = pe.Node(interface = fsl.SliceTimer(), name='fsl_SliceTimer', iterfield = [''])
+fsl_SliceTimer = pe.Node(interface = fsl.SliceTimer(), name='fsl_SliceTimer')
 
 #Computes the time-course SNR for a time series
-confounds_TSNR = pe.Node(interface = confounds.TSNR(), name='confounds_TSNR', iterfield = [''])
+confounds_TSNR = pe.Node(interface = confounds.TSNR(), name='confounds_TSNR')
 confounds_TSNR.inputs.regress_poly = 3
 
 #Wraps command **fslstats**
-fsl_ImageStats = pe.Node(interface = fsl.ImageStats(), name='fsl_ImageStats', iterfield = [''])
+fsl_ImageStats = pe.Node(interface = fsl.ImageStats(), name='fsl_ImageStats')
 fsl_ImageStats.inputs.op_string = '-p 98'
 
 #Wraps command **fslmaths**
-fsl_Threshold = pe.Node(interface = fsl.Threshold(), name='fsl_Threshold', iterfield = [''])
+fsl_Threshold = pe.Node(interface = fsl.Threshold(), name='fsl_Threshold')
 fsl_Threshold.inputs.args = '-bin'
 
 #Anatomical compcor: for inputs and outputs, see CompCor.
-confounds_ACompCor = pe.Node(interface = confounds.ACompCor(), name='confounds_ACompCor', iterfield = [''])
+confounds_ACompCor = pe.Node(interface = confounds.ACompCor(), name='confounds_ACompCor')
 confounds_ACompCor.inputs.num_components = 2
 
 #Wraps command **fsl_regfilt**
-fsl_FilterRegressor = pe.Node(interface = fsl.FilterRegressor(), name='fsl_FilterRegressor', iterfield = [''])
+fsl_FilterRegressor = pe.Node(interface = fsl.FilterRegressor(), name='fsl_FilterRegressor')
 fsl_FilterRegressor.inputs.filter_columns = [1, 2]
 
 #Wraps command **fslmaths**
-fsl_TemporalFilter = pe.Node(interface = fsl.TemporalFilter(), name='fsl_TemporalFilter', iterfield = [''])
+fsl_TemporalFilter = pe.Node(interface = fsl.TemporalFilter(), name='fsl_TemporalFilter')
 fsl_TemporalFilter.inputs.highpass_sigma = 25
 
 #Change the name of a file based on a mapped format string.
-utility_Rename = pe.Node(interface = utility.Rename(), name='utility_Rename', iterfield = [''])
+utility_Rename = pe.Node(interface = utility.Rename(), name='utility_Rename')
 utility_Rename.inputs.format_string = "/output/filtered_spm.nii.gz"
 
 #Use spm_realign for estimating within modality rigid body alignment
-spm_Realign = pe.Node(interface = spm.Realign(), name='spm_Realign', iterfield = [''])
+spm_Realign = pe.Node(interface = spm.Realign(), name='spm_Realign')
 
 #Gunzip wrapper
-misc_Gunzip = pe.Node(interface = misc.Gunzip(), name='misc_Gunzip', iterfield = [''])
+misc_Gunzip = pe.Node(interface = misc.Gunzip(), name='misc_Gunzip')
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
