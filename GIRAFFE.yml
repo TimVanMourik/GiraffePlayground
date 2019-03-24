@@ -3,6 +3,8 @@ tools:
   porcupine:
     file:
       - GIRAFFE/porcupine_pipeline.pork
+    nodes:
+      -GIRAFFE/custom_nodes.json
   armadillo:
     neurovault:
       - 31997
