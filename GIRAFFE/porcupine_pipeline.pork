@@ -226,7 +226,8 @@
           "language": "Docker"
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber",
+      "colour": "#fe334e"
     },
     {
       "toolbox": "Nipype",
@@ -453,7 +454,8 @@
           "language": "Docker"
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#slicetimer"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#slicetimer",
+      "colour": "#fe3948"
     },
     {
       "toolbox": "Nipype",
@@ -628,7 +630,8 @@
           "language": "Docker"
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#tsnr"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#tsnr",
+      "colour": "#9edb06"
     },
     {
       "toolbox": "Nipype",
@@ -790,7 +793,8 @@
           "language": "Docker"
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#imagestats"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#imagestats",
+      "colour": "#fe364b"
     },
     {
       "toolbox": "Nipype",
@@ -1017,7 +1021,8 @@
           "language": "Docker"
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#threshold"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#threshold",
+      "colour": "#fe413f"
     },
     {
       "toolbox": "Nipype",
@@ -1270,7 +1275,8 @@
           "language": "Docker"
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#acompcor"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.confounds.html#acompcor",
+      "colour": "#9edb06"
     },
     {
       "toolbox": "Nipype",
@@ -1484,7 +1490,8 @@
           "language": "Docker"
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#filterregressor"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#filterregressor",
+      "colour": "#fe364b"
     },
     {
       "toolbox": "Nipype",
@@ -1685,7 +1692,8 @@
           "language": "Docker"
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/maths.html#temporalfilter",
+      "colour": "#fe413f"
     },
     {
       "toolbox": "Nipype",
@@ -1795,7 +1803,8 @@
           }
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#rename",
+      "colour": "#9e06db"
     },
     {
       "toolbox": "Nipype",
@@ -2139,7 +2148,8 @@
           }
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.spm/preprocess.html#realign"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.spm/preprocess.html#realign",
+      "colour": "#b101cc"
     },
     {
       "toolbox": "Nipype",
@@ -2210,7 +2220,8 @@
           }
         }
       ],
-      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.misc.html#gunzip"
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.algorithms.misc.html#gunzip",
+      "colour": "#afce02"
     }
   ],
   "version": "v1"
